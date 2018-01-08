@@ -1,0 +1,36 @@
+body{
+background-image: url("/assets/images/Burger-background.jpg");
+font-family: 'Russo One', sans-serif;
+}
+
+#bigBurger{
+    width: 500px;
+}
+
+h1{
+    background-color: white;
+}
+
+h2{
+    background-color: white;
+    display: inline-block;
+}
+
+li{
+    background-color: white;
+    
+    
+}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
+#burgerBar{
+    margin-bottom: 50px;
+}
+
+ul{
+    display: inline-block;
+}

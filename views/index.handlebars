@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div id="burger-img" class="col-md-6 col-centered">
+            <img id="bigBurger" src="/assets/images/149301.png" alt="Mmmmmmmmm....Burgerrrrrrrr">
+            <h1>Burger... omm nom nom!</h1>
+        </div>
+
+    </div>
+    <div class="row">
+        <div id="cooked" class="col-md-6 text-center">
+            <h2>Uneaten Burgers</h2>
+            <ul>
+                {{#each burgers}} 
+                    {{#unless devoured}} 
+                        {{> burger/burger-block}} 
+                    {{/unless}} 
+                {{/each}}
+            </ul>
+        </div>
+        <div id="eaten" class="col-md-6 text-center">
+            <h2>Eaten Burgers</h2>
+            <ul>
+                {{#each burgers}} 
+                    {{#if devoured}} 
+                        {{> burger/burger-block}} 
+                    {{/if}} 
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div id="burgerBar" class="col-md-6 col-centered">
+            <div class="input-group">
+                <input id="bgInput" type="text" class="form-control" placeholder="Burger Name">
+                <span class="input-group-btn">
+                    <button class="btn btn-default newBurger" type="button">Submit</button>
+                </span>
+            </div>
+            <!-- /input-group -->
+        </div>
+        <!-- /.col-lg-6 -->
+    </div>
+</div>
+{{!-- end container div --}}
